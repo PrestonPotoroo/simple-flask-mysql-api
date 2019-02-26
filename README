@@ -1,0 +1,19 @@
+A simple api setup that depends on flask and mysql.
+
+Dependency Libraries:
+Flask
+mysql-connector
+
+This api allows whever uses this code to change mysql tables or alter existing tables without any problems.
+
+
+Please set up the mysql settings in the config/app.py file before use. Variables that need to be set are listed below:
+
+DB_USER - the username for mysql instance
+DB_PASS - password for the mysql user
+DB_HOST - where is mysql hosted
+DB_NAME - database name to use
+DB_TABLE - table within the databse to use
+DB_VALIDNAMES - A list of column names that will be used to create or update new records, back as a prevention for sql injection
+DB_BANLIST - A list of banned field that you do not want the consumer to see when the cll for a list of all records or a record individually
+
