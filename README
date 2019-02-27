@@ -2,7 +2,7 @@ A simple api setup that depends on flask and mysql.
 
 Dependency Libraries:
 Flask
-mysql-connector
+mysql-connector >= 8.0.0
 
 This api allows whever uses this code to change mysql tables or alter existing tables without any problems.
 
@@ -17,3 +17,6 @@ DB_TABLE - the table within the database
 DB_VALIDNAMES - A list of column names that will be used to create or update new records, alsp a prevention for sql injection
 DB_BANLIST - A list of banned fields that you do not want the consumer to see when they call for a list of all records or an individual record
 
+Please note - Cannot bulk create, modify, or delete
+
+Also, json must be sent encompassed with only curly brackets {}.
