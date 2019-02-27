@@ -12,8 +12,8 @@ Please set up the mysql settings in the config/app.py file before use. Variables
 DB_USER - the username for mysql instance
 DB_PASS - password for the mysql user
 DB_HOST - where is mysql hosted
-DB_NAME - database name to use
-DB_TABLE - table within the databse to use
-DB_VALIDNAMES - A list of column names that will be used to create or update new records, back as a prevention for sql injection
-DB_BANLIST - A list of banned field that you do not want the consumer to see when the cll for a list of all records or a record individually
+DB_NAME - database name
+DB_TABLE - the table within the database
+DB_VALIDNAMES - A list of column names that will be used to create or update new records, alsp a prevention for sql injection
+DB_BANLIST - A list of banned fields that you do not want the consumer to see when they call for a list of all records or an individual record
 
